@@ -14,9 +14,15 @@ return {
     { '\\', ':Neotree reveal<CR>', desc = 'NeoTree reveal', silent = true },
   },
   opts = {
+    close_if_last_window = true,
     filesystem = {
+      filtered_items = {
+        visible = true, -- Show hidden files
+      },
       window = {
         mappings = {
+          ['<C-n>'] = 'next_source', -- Custom binding for Ctrl+n
+          ['<C-p>'] = 'prev_source', -- Custom binding for Ctrl+p
           ['\\'] = 'close_window',
         },
       },
