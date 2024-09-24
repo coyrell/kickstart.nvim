@@ -23,6 +23,8 @@ return {
 
     -- Add your own debuggers here
     'leoluz/nvim-dap-go',
+    'nvim-lua/plenary.nvim', -- Needed dependency for dap
+    'simrat39/rust-tools.nvim',
   },
   keys = function(_, keys)
     local dap = require 'dap'
